@@ -1,0 +1,122 @@
+body {
+    background-color: #319795;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.analyzerMain {
+    background-color: white;
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.analyzerMain .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    gap: 40px;
+}
+
+.analyzerMain .container > * {
+    text-align: center;
+    flex: 1;
+    width: 100%;
+}
+
+.lockGif {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.password-field {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.password-field input {
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.password-field img {
+    cursor: pointer;
+}
+
+#copyBtn {
+    background-color: #3cc;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#copyBtn span {
+    margin: 0 10px;
+}
+
+.password-filters .length {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.other-filters ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-filters ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .analyzerMain {
+        width: 90vw;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .password-field {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 5px 10px;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 2%;
+    }
+
+    .password-field img {
+        width: 5vw;
+    margin: auto;
+    }
+
+    #copyBtn {
+        background-color: #3cc;
+        border: none;
+        outline: none;
+        padding: 3%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #copyBtn img {
+        width: 10px;
+    }
+}
